@@ -33,13 +33,15 @@ The `skill/` directory in this repo is the distributable unit. Copy it to one of
 ### Option A: Personal (available across all your projects)
 
 ```bash
-cp -r skill/ ~/.cursor/skills/prd-writer/
+mkdir -p ~/.cursor/skills
+cp -r skill/ ~/.cursor/skills/prd-writer
 ```
 
 ### Option B: Per-project (shared via repository)
 
 ```bash
-cp -r skill/ <your-project>/.cursor/skills/prd-writer/
+mkdir -p <your-project>/.cursor/skills
+cp -r skill/ <your-project>/.cursor/skills/prd-writer
 ```
 
 No dependencies. No build step. Just copy the folder.
